@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    h1= title
+    h3 Welcome #{username}
+    br
+    .list-group
+        a.list-group-item( href="/joke" )
+            h4.list-group-item-heading Show random joke
+            p.list-group-item-text Get a random joke from the database
+        a.list-group-item( href="/jokes" )
+            h4.list-group-item-heading Show all jokes
+            p.list-group-item-text Gets all jokes from the database
+        a.list-group-item( href="/addJoke" )
+            h4.list-group-item-heading Add new Joke
+            p.list-group-item-text Adds a new joke to the database
+        a.list-group-item( href="/addUser" )
+            h4.list-group-item-heading Add new user
+            p.list-group-item-text Adds a new user to the database
+

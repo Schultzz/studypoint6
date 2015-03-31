@@ -1,0 +1,11 @@
+//
+   Created by MS on 27-03-2015.
+
+extend layout
+
+block content
+    form(method="post" action="/storeUser")
+        input(name="username" placeholder="type username")
+        input(name="password" placeholder="type password")
+        input(type='submit')
+        p #[a(href='/') << go back]

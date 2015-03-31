@@ -1,0 +1,13 @@
+//
+   Created by MS on 25-03-2015.
+extends layout
+
+block content
+    h3 Alle jokes:
+    br
+    each item in jokes
+        li= item
+        br
+
+    p #[a(href='/') << go back]
+

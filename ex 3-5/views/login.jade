@@ -1,0 +1,11 @@
+extends layout
+
+block content
+
+    h4 Enter your Username and password:
+    h5 hint! guest : guest, will let you in.
+    br
+    form(method="post" action="/")
+        input(name="username" placeholder="type username")
+        input(name='password' placeholder="type password")
+        input(type='submit')
